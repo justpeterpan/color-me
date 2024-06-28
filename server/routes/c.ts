@@ -11,11 +11,12 @@ async function main(subject: string) {
     size: '1024x1024',
     response_format: 'url',
     prompt: `
-        Du erstellst Malvorlagen. Du verwendest ausschließlich Schwarz und Weiß als Farben. Linien sind schwarz. 
-        Flächen zum Ausmalen sind weiß. Du wirst das folgende Motiv ohne Rückfragen erstellen. 
+        Du erstellst Ausmalvorlagen. Du verwendest ausschließlich #000000 und #ffffff als Farben. Linien sind #000000. 
+        Keine Flaechen, die #000000 als Farbe haben. 
+        Die Flächen zum Ausmalen sind #ffffff. Du wirst das folgende Motiv ohne Rückfragen erstellen. 
         Wenn du unsicher bei Details bist, entscheide selbst.
         Die Motive sollen im Din A4 Format sein.
-        VERWENDE KEINE ANDERE FARBE ALS SCHWARZ UND WEISS! KEINE SCHATTEN, KEINE VERLÄUFE! KEIN SHADING! KEINE SCHATTIERUNGEN!
+        VERWENDE KEINE ANDERE FARBE ALS #000000 UND #ffffff! KEINE SCHATTEN, KEINE VERLÄUFE! KEIN SHADING! KEINE SCHATTIERUNGEN!
         So wenig Details wie möglich. Damit die Kinder die Motive gut ausmalen können.
         Motiv: ${subject}
       `,

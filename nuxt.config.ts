@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   experimental: { typedPages: true },
+  nitro: {
+    routeRules: {
+      '/': { static: true },
+    },
+  },
   modules: ['@nuxt/ui'],
   future: {
     compatibilityVersion: 4,
